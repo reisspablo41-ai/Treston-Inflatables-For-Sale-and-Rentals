@@ -36,7 +36,7 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <Image src="/logo-slide.png" alt="Treston Inflatable for Sale and Rentals" width={140} height={48} className="h-12 w-auto" priority />
+              <Image src="/main-logo.png" alt="Treston Inflatable for Sale and Rentals" width={140} height={48} className="h-12 w-auto" priority />
             </Link>
           </div>
           

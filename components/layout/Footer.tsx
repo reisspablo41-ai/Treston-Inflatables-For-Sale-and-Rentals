@@ -18,7 +18,7 @@ export async function Footer() {
           
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <Image src="/logo-slide.png" alt="Treston Inflatable for Sale and Rentals" width={140} height={48} className="h-12 w-auto brightness-0 invert" />
+              <Image src="/main-logo.png" alt="Treston Inflatable for Sale and Rentals" width={140} height={48} className="h-12 w-auto brightness-0 invert" />
             </Link>
             <p className="text-slate-400 max-w-xs">
               Your ultimate party, delivered. We bring safe, high-energy fun right to your backyard or event.
