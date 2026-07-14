@@ -15,7 +15,7 @@ export async function POST(req: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Treston Inflatable for Sale and Rentals <trestoninflatables@gmail.com>',
+      from: 'Treston Inflatable for Sale and Rentals <bookings@trestoninflatablesrentalsandsales.com>',
       to: 'trestoninflatables@gmail.com',
       replyTo: email,
       subject: `New Contact Request from ${firstName} ${lastName}`,
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
           <div style="background: #0f172a; padding: 28px 32px; text-align: center;">
             <p style="margin: 0 0 4px; color: #8b5cf6; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;">New Inquiry</p>
             <h1 style="margin: 0; color: #ffffff; font-size: 20px; font-weight: 800;">Treston Inflatable for Sale and Rentals</h1>
-            <p style="margin: 6px 0 0; color: #94a3b8; font-size: 13px;">yourveryownbouncehousepartyrental.com</p>
+            <p style="margin: 6px 0 0; color: #94a3b8; font-size: 13px;">trestoninflatables@gmail.com</p>
           </div>
 
           <div style="padding: 32px;">
@@ -44,7 +44,7 @@ export async function POST(req: Request) {
           </div>
 
           <div style="background: #f1f5f9; padding: 16px 32px; text-align: center; color: #94a3b8; font-size: 12px;">
-            Sent from yourveryownbouncehousepartyrental.com · trestoninflatables@gmail.com
+            Sent from trestoninflatables@gmail.com · trestoninflatables@gmail.com
           </div>
         </div>
       `,
