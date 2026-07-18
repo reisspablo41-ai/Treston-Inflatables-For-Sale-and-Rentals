@@ -34,6 +34,7 @@ interface ProductData {
 
 interface BookingItem {
   product_id: string | number;
+  name?: string;
   quantity: number;
   price_per_unit: number;
 }
@@ -190,7 +191,7 @@ export async function createBooking(data: BookingData) {
   try {
     const itemsHtml = data.items.map((item: BookingItem) => `
       <div style="padding: 10px; border-bottom: 1px solid #edf2f7;">
-        <p style="margin: 0; font-weight: bold; color: #1a202c;">Item ID: ${item.product_id}</p>
+        <p style="margin: 0; font-weight: bold; color: #1a202c;">${item.name || `Item #${item.product_id}`}</p>
         <p style="margin: 5px 0 0; color: #718096; font-size: 14px;">Quantity: ${item.quantity} | Price: $${item.price_per_unit}</p>
       </div>
     `).join('');
